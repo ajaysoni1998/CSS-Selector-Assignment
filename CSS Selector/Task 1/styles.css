@@ -1,0 +1,48 @@
+/* B(a) - target the anchor tag and change color */
+nav a {
+    color: green;
+}
+
+/* B(b) - change text and bg color of first h2 tag */
+nav> h2{
+    color: red;
+    background-color: beige;
+}
+
+/* B(c) - change color of first p text to red */
+div + p {
+    color: red;
+}
+
+/* C(a)- target the a tag with attr href and change color to red and remove underline*/
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+
+/* C(b)- target the anchor with "active" class and change the text color and text style as underlying*/
+a[class="active"] {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* C(c)- change bg color of anchor tag with attr of target value as "_self"*/
+a[target="_self"]{
+    background-color: aquamarine;
+}
+
+/* D(a)- add“...” i.e. three dots after value of last p*/
+p:last-child::after{
+    content: "...";
+}
+
+/* D(b)- change color of list bullet points*/
+li::marker{
+    color: deepskyblue;
+}
+
+/* D(c)- taregt the 2nd p tag and select first letter, change color to red and increase font size to 30px*/
+p:nth-child(even)::first-letter{
+    color: red;
+    font-size: 30px;
+}
